@@ -49,17 +49,19 @@ section#scope-left {
     display: flex;
     flex-wrap: wrap;
     overflow-y: scroll;
-    overflow-x: hidden;
     box-sizing: border-box;
+    justify-content: center;
     width: 30%;
     height: calc(100vh - 30px);
-    padding: 30px 30px 0px 30px;
+    padding: 30px 0px;
 }
 
 /*  Left Container Content*/
 
 section#scope-left > div {
     display: flex;
+    min-width: 310px;
+    max-width: 350px;
     width: 100%;
     border-radius: 20px;
     background-color: var(--bg-cards);
@@ -103,9 +105,11 @@ div#profile h3 {
 div#contacts {
     display: flex;
     flex-direction: column;
-    height: 300px;
+    box-sizing: border-box;
+    height: 320px;
     margin-bottom: 25px;
     padding: 10px;
+    padding-right: 10px;
 }
 
 
@@ -162,6 +166,7 @@ div#group-tecnologies {
     grid-template-rows: 25px 25px 25px;
     grid-column-gap: 12px;
     grid-row-gap: 20px;
+    justify-content: center;
     box-sizing: border-box;
     margin-top: 25px;
 }
@@ -181,7 +186,8 @@ div#group-tecnologies > span {
 div#experiences {
     display: flex;
     flex-direction: column;
-    height: 100px;
+    box-sizing: border-box;
+    height: 140px;
     padding: 20px;
     margin-bottom: 25px;
 }
@@ -204,9 +210,10 @@ div#experiences h3 {
 div#education {
     display: flex;
     flex-direction: column;
-    height: 100px;
+    box-sizing: border-box;
+    height: 140px;
     padding: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 div#education ul {
@@ -228,19 +235,23 @@ div#education h3 {
 
 section#scope-right {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     overflow-y: scroll;
     box-sizing: border-box;
+    justify-content: baseline;
+    align-items: center;
     width: 70%;
     height: calc(100vh - 30px);
-    padding: 30px 35px 0px 10px;
+    padding: 30px 35px 0px 20px;
 }
 
 /*  Right Container Content */
 
 section#scope-right > div {
+    display: flex;
+    max-width: 1130px;
+    min-width: 750px;
     width: 100%;
-    margin-left: 5px;
     border-radius: 20px;
 }
 
@@ -248,7 +259,6 @@ section#scope-right > div {
 /*  Titles Projects */
 
 div#projects {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
@@ -272,7 +282,6 @@ div#projects button {
 /* Cards */
 
 div#cards {
-    display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
     box-sizing: border-box;
@@ -282,9 +291,10 @@ div#cards {
 div.card {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
     background-color: var(--bg-cards);
-    width: 42%;
-    height: 130px;
+    width: 49%;
+    height: 184px;
     padding: 27px;
     border-radius: 20px;
 }
@@ -312,7 +322,7 @@ div.content-card {
 
 div.footer-card {
     display: flex;
-    align-items: end;
+    justify-content: space-between;
     font-size: 12px;
 }
 
@@ -321,10 +331,16 @@ div.footer-card h4 {
     margin-left: 5px;
 }
 
-div.footer-card span {
+div.footer-left, div.footer-right {
+    display: flex;
+    align-items: center;
+}
+
+
+
+div.footer-right span {
     width: 10px;
     height: 10px;
-    margin-left: 150px;
     margin-right: 10px;
     background-color: yellow;
     border: 2px var(--text-color) solid;
@@ -332,10 +348,11 @@ div.footer-card span {
 }
 
 
+
+
 /*  Title Posts */
 
 div#posts {
-    display: flex;
     align-items: center;
     box-sizing: border-box;
     height: 80px;
@@ -352,7 +369,6 @@ div#posts h2 {
 /*  Posts Cards */
 
 div#cards-posts {
-    display: flex;
     height: 180px;
     background-color: var(--bg-cards);
     margin-bottom: 5px;
