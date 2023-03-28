@@ -9,13 +9,24 @@
     <title>Desafio Portfolio</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <button>Menu</button>
-        </nav>
-    </header>
     <main>
+        <div id="navbar">
+            <span>Logo</span>
+            <button id="btn-menu">
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu">
+                <li>Perfil</li>
+                <li>Contatos</li>
+                <li>Tecnologias</li>
+                <li>Experiencias</li>
+                <li>Educação</li>
+            </ul>
+        </div>
+
         <section id="scope-left">
+            
+
             <div id="profile">
                 <img src="./images/perfilfotoLinkedin.png" alt="Foto Portfolio">
                 <h2>Bruno Barbosa Antunes</h2>
@@ -90,6 +101,7 @@
         </section>
 
         <section id="scope-right">
+            
 
             <div id="projects">
                 <h2>My Projects</h2>
@@ -168,7 +180,7 @@
             </div>
         </section>
     </main>
-    <footer>Feito por Bruno Barbosa</footer>
+    <footer id="rodape">Feito por Bruno Barbosa</footer>
 
     <script src="script.js"></script>
 </body>
