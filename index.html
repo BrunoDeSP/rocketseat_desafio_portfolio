@@ -11,22 +11,38 @@
 <body>
     <main>
         <div id="navbar">
-            <span>Logo</span>
             <button id="btn-menu">
-                <span id="hamburguer"></span>
+                <span id="top-bar"></span>
+                <span id="middle-bar"></span>
+                <span id="bot-bar"></span>
             </button>
+            <p>Menu</p>
+            <!-- <span id="logo">Bruno Barbosa antunes</span> -->
             <ul id="menu">
-                <li>Perfil</li>
-                <li>Contatos</li>
-                <li>Tecnologias</li>
-                <li>Experiencias</li>
-                <li>Educação</li>
+                <li id="profile-mobile">
+                    <img src="./images/perfilfotoLinkedin.png" alt="Foto Portfolio">
+                    <h2>Bruno Barbosa Antunes</h2>
+                    <h3>Desenvolvedor Web</h3>
+                </li>
+
+                <span id="divisor"></span>
+
+                <li id="contacts-mobile" class="active">
+                    <p>Contatos</p> 
+                    <div id="contacts-mobile-content">
+                        Teste
+                    </div>
+                </li>
+                
+                <li id="tecnologies-mobile">Tecnologias</li>
+                <li id="experiences-mobile">Experiencias</li>
+                <li id="education-mobile">Educação</li>
+                <li id="footer-mobile">Feito por Bruno Barbosa Antunes</li>
             </ul>
         </div>
 
         <section id="scope-left">
             
-
             <div id="profile">
                 <img src="./images/perfilfotoLinkedin.png" alt="Foto Portfolio">
                 <h2>Bruno Barbosa Antunes</h2>
@@ -102,7 +118,6 @@
 
         <section id="scope-right">
             
-
             <div id="projects">
                 <h2>My Projects</h2>
                 <button>Veja todos</button>
@@ -178,6 +193,7 @@
                     <h4>#genimotion</h4>
                 </div>
             </div>
+
         </section>
     </main>
     <footer id="rodape">Feito por Bruno Barbosa</footer>
