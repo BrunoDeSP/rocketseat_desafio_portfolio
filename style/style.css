@@ -1,9 +1,14 @@
 @charset 'UTF-8';
 
-/* Imports */
+/* 
+|| IMPORTS  ||
+*/
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap');
 
+/* 
+||  GLOBAL SETTINGS ||
+*/
 
 * {
     margin: 0px;
@@ -43,129 +48,148 @@ body {
     color: var(--text-color);
 }
 
-main {
+.main {
     display: flex;
 }
 
-/*  General Container Left  */
+/* 
+||  NAVBAR SETTINGS  ||
+*/
 
-section#scope-left {
+.navbar {
+    display: none;
+}
+
+/* 
+||  CONTÊINERES SETTINGS    ||
+*/
+
+.container {
     display: flex;
     flex-wrap: wrap;
     overflow-y: scroll;
-    box-sizing: border-box;
-    justify-content: center;
+    box-sizing: border-box;    
     align-content: baseline;
+}
+
+/*
+||  CONTAINER LEFT  ||
+*/
+
+.container--left {   
+    justify-content: center;
     width: 30%;
     height: calc(100vh - 30px);
     padding: 30px 0px;
 }
 
-/*  Left Container Content*/
+/*
+||  CARDS SETTINGS  ||
+*/
 
-section#scope-left > div {
-    display: flex;
-    width: 90%;
-    max-width: 340px;
-    border-radius: 20px;
-    background-color: var(--bg-cards);
+.profile,
+.contacts,
+.tecnologies,
+.experiences,
+.education {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   width: 90%;
+   max-width: 340px;
+   margin-bottom: 25px;
+   box-sizing: border-box;
+   border-radius: 20px;
+   background-color: var(--bg-cards);
 }
 
-/*  Profile */
+/*
+||  PROFILE ||
+*/
 
-div#profile {
-    flex-direction: column;
-    align-items: center;
-    height: 270px;
-    box-sizing: border-box;
-    margin-bottom: 25px;
+.profile {
+   align-items: center;
+   height: 270px;
 }
 
-div#profile > img {
-    width: 116px;
-    height: 116px;
-    border-radius: 75px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    border: 2px green solid;
+.profile__img {
+   width: 116px;
+   height: 116px;
+   border-radius: 75px;
+   margin-top: 30px;
+   margin-bottom: 10px;
+   margin-left: 10px;
+   border: 2px green solid;
 }
 
-div#profile h2 {
-    margin-top: 5px;
-    margin-left: 4px;
-    font-size: 2.1rem;
+.profile__title {
+   margin-top: 5px;
+   margin-left: 4px;
+   font-size: 2.1rem;
 }
 
-div#profile h3 {
-    font-size: small;
-    margin-left: 5px;
-    font-weight: lighter;
+.profile__title--small {
+   font-size: small;
+   margin-left: 5px;
+   font-weight: lighter;
 }
 
+/*
+||  CONTACTS  ||
+*/
 
-/*  Contacts */
-
-div#contacts {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    height: 320px;
-    margin-bottom: 25px;
-    padding: 10px;
-    padding-right: 10px;
+.contacts {   
+   height: 320px;
+   padding: 10px;
+   padding-right: 10px;
 }
 
-
-div.group-legends img {
-    width: 25px;
-    height: 25px;
-    margin-top: 16px;
-    margin-left: 20px;
-    color: var(--text-color);
+.contacts__group {
+   display: flex;
+   align-items: center;
 }
 
-div.group-legends a {
-    text-decoration: none;
-    color: var(--text-color);
+.contacts__svg {
+   width: 25px;
+   height: 25px;
+   margin-top: 16px;
+   margin-left: 20px;
+   color: var(--text-color);
 }
 
-a > p.legends:hover {
-    font-size: 1.4rem;
-    color: white;
+.contacts__link {
+   text-decoration: none;
+   color: var(--text-color);
 }
 
-
-
-p.legends {
-    font-size: 1.1rem;
-    padding-top: 20px;
-    padding-right: 5px;
-    margin-left: 15px;
-    
+.contacts__link > .contacts__subtitle:hover {
+   font-size: 1.4rem;
+   color: white;
 }
 
-div.group-legends {
-    display: flex;
-    align-items: center;
+.contacts__subtitle {
+   font-size: 1.1rem;
+   padding-top: 20px;
+   padding-right: 5px;
+   margin-left: 15px;
+   
 }
 
-/*  Tecnologies */
+/*  
+||  TECNOLOGIES  ||
+*/
 
-div#tecnologies {
-    display: flex;
-    flex-direction: column;
+
+.tecnologies {
     height: 210px;
     padding: 20px;
-    margin-bottom: 25px;
-    box-sizing: border-box;
 }
 
-div#tecnologies h2 {
+.tecnologies__title {
     margin-left: 5px;
 }
 
-div#group-tecnologies {
+.tecnologies__group {
     display: grid;
     grid-template-columns: 80px 80px 80px;
     grid-template-rows: 25px 25px 25px;
@@ -176,7 +200,7 @@ div#group-tecnologies {
     margin-top: 25px;
 }
 
-div#group-tecnologies > span {
+.tecnologies__span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,93 +210,74 @@ div#group-tecnologies > span {
     color: black;
 }
 
-/*  Experiences */
+/*  
+||  EXPERIENCES ||
+*/
 
-div#experiences {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
+.experiences {
     height: 140px;
     padding: 20px;
-    margin-bottom: 25px;
 }
 
-div#experiences ul {
+.experiences__list {
     margin-top: 15px;
     margin-left: 40px;
     font-size: 1.2rem;
     line-height: 18px;
 }
 
-div#experiences h3 {
+.experiences__subtitle {
     font-size: 1.5rem;
 }
 
+/*  
+||  EDUCATION  ||
+*/
 
-
-/*  Education */
-
-div#education {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
+.education {
     height: 140px;
     padding: 20px;
-    margin-bottom: 20px;
 }
 
-div#education ul {
+.education__list {
     margin-top: 15px;
     margin-left: 40px;
     font-size: 1.2rem;
     line-height: 18px;
 }
 
-div#education h3 {
+.education__subtitle {
     font-size: 1.5rem;
 }
 
+/*
+||  CONTAINER RIGHT  ||
+*/
 
-
-
-
-/*  General Container Right  */
-
-section#scope-right {
-    display: flex;
-    flex-wrap: wrap;
-    overflow-y: scroll;
-    box-sizing: border-box;
-    align-content: baseline;
+.container--right {  
     width: 70%;
     height: calc(100vh - 30px);
     /* padding: 30px 35px 0px 30px; */
 }
 
-/*  Right Container Content */
+/* 
+||  CARDS SETTINGS  ||
+*/
 
-div#projects,
-div#cards,
-div#posts,
-div#cards-posts {
+.projects,
+.cards,
+.posts,
+.cardsPosts {
     width: 100%;
     border-radius: 20px;
     margin: 0px 30px;
 }
 
+/*
+||  TITLES PROJECTS  ||
+*/
 
-
-
-/* Navbar Settings */
-
-div#navbar {
-    display: none;
-}
-
-
-/*  Titles Projects */
-
-div#projects {
+.projects {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -284,28 +289,28 @@ div#projects {
     background-color: var(--bg-cards);
 }
 
-div#projects h2 {
+.projects__title {
     font-size: 1.9rem;
 }
 
-div#projects button {
+.projects__button {
     background-color: var(--bg-cards);
     border: none;
     color: var(--text-color);
 }
 
+/* 
+||  CARDS  ||
+*/
 
-/* Cards */
-
-div#cards {
+.cards {
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
     box-sizing: border-box;
 }
 
-
-div.card {
+.cards__group {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -316,8 +321,7 @@ div.card {
     border-radius: 20px;
 }
 
-
-div.title-card {
+.cards__header {
     display: flex;
     width: 100%;
     margin-bottom: 10px;
@@ -325,37 +329,36 @@ div.title-card {
     font-size: 1.4rem;
 }
 
-div.title-card img {
+.cards__header__img {
     width: 19x;
     height: 19px;
     margin-right: 17px;
 }
 
-div.content-card {
+.cards__main {
     font-size: small;
     height: calc(100% - 25px);
     padding-top: 10px;
 }
 
-div.footer-card {
+.cards__footer {
     display: flex;
     justify-content: space-between;
     font-size: 1.2rem;
 }
 
-div.footer-card h4 {
+.cards__footer h4{
     margin-right: 15px;
     margin-left: 5px;
 }
 
-div.footer-left, div.footer-right {
+.footer__group--left,
+.footer__group--right {
     display: flex;
     align-items: center;
 }
 
-
-
-div.footer-right span {
+.footer__group--right span {
     width: 10px;
     height: 10px;
     margin-right: 10px;
@@ -364,12 +367,11 @@ div.footer-right span {
     border-radius: 50px;
 }
 
+/*
+||  TITLE POSTS  ||
+*/
 
-
-
-/*  Title Posts */
-
-div#posts {
+.posts {
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -379,14 +381,16 @@ div#posts {
     background-color: var(--bg-cards);
 }
 
-div#posts h2 {
+.posts h2 {
     font-size: 1.9rem;
 
 }
 
-/*  Posts Cards */
+/*  
+||  POSTS CARDS  ||
+*/
 
-div#cards-posts {
+.cardsPosts {
     display: grid;
     grid-template-columns: 170px;
     grid-template-rows: 50% 20% 30% ;
@@ -395,14 +399,14 @@ div#cards-posts {
     margin-bottom: 5px;
 }
 
-div#photo-profile {
+.cardsPosts__profile {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 4;
 }
 
-div#photo-profile img {
+.cardsPosts__profile img {
     width: 120px;
     height: 120px;
     margin-top: 30px;
@@ -411,30 +415,28 @@ div#photo-profile img {
     border-radius: 50%;
 }
 
-div#content-card {
+.cardsPosts--title {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    margin-top: 30px;
+    font-weight: lighter;
+    font-size: 1.4rem;
 } 
 
-div#content-card {
-    margin-top: 30px;
-}
-
-div#content-card h2 {
+.cardsPosts--title h2 {
     font-size: 1.8rem;
 }
 
-
-div#content-card h4{
+.cardsPosts--title h4 {
     margin-top: 10px;
     margin-bottom: 20px;
     font-weight: lighter;
     font-size: 1.4rem;
 }
 
-div#content-card-subtitle {
+.cardsPosts--subtitle {
     padding-top: 13px;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -442,41 +444,34 @@ div#content-card-subtitle {
     grid-row-end: 3;
 }
 
-div#content-card-subtitle h2 {
+.cardsPosts--subtitle h2 {
     font-size: 1.6rem;
     font-weight: lighter;
 }
 
-div#hashtags {
+.cardsPosts--hashtags {
     display: flex;
     padding-top: 7px;
 }
 
-div#hashtags h4 {
+.cardsPosts--hashtags h4 {
     margin-right: 20px;
     font-weight: lighter;
     font-size: 1.4rem;
 }
 
+/*  
+||  PAGE FOOTER  ||
+*/
 
-
-
-/*  Page Footer */
-
-footer {
+.rodape {
     display: flex;
     justify-content: center;
     padding: 5px;
     font-size: 1.6rem;
 }
 
-
-
-/* NAVBAR CONFIGURATIONS */
-
 /*  
-   
- */
     
 @media (max-width: 1080px) {
     
@@ -542,7 +537,7 @@ footer {
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
-        /* background-color: #0f0f14; */
+        -- background-color: #0f0f14; --
         background: var(--body-bg-color);
         color: var(--body-bg-color);
         box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.349);
@@ -614,7 +609,7 @@ footer {
     }
 
     #profile-mobile h2 {
-        /* margin-top: 5px; */
+     -- margin-top: 5px; --
         margin-left: 4px;
         font-size: 2.1rem;
     }
@@ -625,14 +620,14 @@ footer {
         font-weight: lighter;
     }
 
-    /* #contacts-mobile.active #contacts-mobile-content {
+    --  #contacts-mobile.active #contacts-mobile-content {
         display: flex;
         position: absolute;
         width: 100%;
         height: 200px;
         top: 50px;
         background-color: yellow;
-    } */
+    } --
 
     #footer-mobile {
         display: flex;
@@ -814,5 +809,5 @@ footer {
 
 }
 
-
+*/
 

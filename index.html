@@ -9,8 +9,8 @@
     <title>Desafio Portfolio</title>
 </head>
 <body>
-    <main>
-        <div id="navbar">
+    <main class="main">
+        <div class="navbar">
             <button id="btn-menu">
                 <span id="top-bar"></span>
                 <span id="middle-bar"></span>
@@ -41,74 +41,85 @@
             </ul>
         </div>
 
-        <section id="scope-left">
+        <section class="container container--left">
             
-            <div id="profile">
-                <img src="./images/perfilfotoLinkedin.png" alt="Foto Portfolio">
-                <h2>Bruno Barbosa Antunes</h2>
-                <h3>Desenvolvedor Web</h3>
+            <div class="profile">
+                <img class="profile__img" src="./images/perfilfotoLinkedin.png" alt="Foto Portfolio">
+                <h2 class="profile__title">Bruno Barbosa Antunes</h2>
+                <h3 class="profile__title--small">Desenvolvedor Web</h3>
             </div>
 
-            <div id="contacts">
-                <div class="group-legends">
-                    <img src="images/assets/map-pin.svg" alt="icon-local">
-                    <p class="legends">Brasil</p>
+            <div class="contacts">
+                <div class="contacts__group">
+                    <img class="contacts__svg" src="images/assets/map-pin.svg" alt="icon-local">
+                    <p class="contacts__subtitle">Brasil</p>
                 </div>
-                <div class="group-legends">
-                    <img src="images/assets/folder.svg" alt="icon-state">
-                    <p class="legends">Procurando Emprego</p>
+                <div class="contacts__group">
+                    <img class="contacts__svg" src="images/assets/folder.svg" alt="icon-state">
+                    <p class="contacts__subtitle">Procurando Emprego</p>
                 </div>
-                <div class="group-legends">
-                    <img src="images/assets/github.svg" alt="icon-github">
-                    <a href="https://www.github.com/BrunoDeSP" target="_blank"><p class="legends">BrunoDeSP</p></a>
+                <div class="contacts__group">
+                    <img class="contacts__svg" src="images/assets/github.svg" alt="icon-github">
+                    <a class="contacts__link" href="https://www.github.com/BrunoDeSP" target="_blank">
+                        <p class="contacts__subtitle">BrunoDeSP</p>
+                    </a>
                 </div>
-                <div class="group-legends">
-                    <img src="images/assets/linkedin.svg" alt="icon-linkedin">
-                    <a href="https://www.linkedin.com/in/bruno-barbosa-antunes" target="_blank"><p class="legends">Bruno Barbosa Antunes</p></a>
+                <div class="contacts__group">
+                    <img class="contacts__svg" src="images/assets/linkedin.svg" alt="icon-linkedin">
+                    <a class="contacts__link" href="https://www.linkedin.com/in/bruno-barbosa-antunes" target="_blank">
+                        <p class="contacts__subtitle">Bruno Barbosa Antunes</p>
+                    </a>
                 </div>
-                <div class="group-legends">
-                    <img src="images/assets/instagram.svg" alt="icon-instagram">
-                    <a href="https://www.instagram.com/antunes.no" target="_blank"><p class="legends">@antunes.no</p></a>
+                <div class="contacts__group">
+                    <img class="contacts__svg" src="images/assets/instagram.svg" alt="icon-instagram">
+                    <a class="contacts__link" href="https://www.instagram.com/antunes.no" target="_blank">
+                        <p class="contacts__subtitle">@antunes.no</p>
+                    </a>
                 </div>
-                <div class="group-legends">
-                    <img src="images/assets/star.svg" alt="icon-code">
-                    <a href="https://github.com/BrunoDeSP/rocketseat_desafio_portfolio.git" target="_blank"><p class="legends">Codigo Do Projeto</p></a>
+                <div class="contacts__group">
+                    <img class="contacts__svg" src="images/assets/star.svg" alt="icon-code">
+                    <a class="contacts__link" href="https://github.com/BrunoDeSP/rocketseat_desafio_portfolio.git" target="_blank">
+                        <p class="contacts__subtitle">Codigo Do Projeto</p>
+                    </a>
                 </div>
-                <div class="group-legends">
-                    <img src="images/assets/mail.svg" alt="icon-email">
-                    <p class="legends">antunesbrunobarbosa1@gmail.com</p>
+                <div class="contacts__group">
+                    <img class="contacts__svg" src="images/assets/mail.svg" alt="icon-email">
+                    <p class="contacts__subtitle">antunesbrunobarbosa1@gmail.com</p>
                 </div>
             </div>
 
-            <div id="tecnologies">
-                <h2>Tecnologias</h2>
-                <div id="group-tecnologies">                        
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    <span>JAVASCRIPT</span>
-                    <span>NODEJS</span>
-                    <span>MYSQL</span>
-                    <span>GITHUB</span>
-                    <span>GIT</span>
-                    <span>REACTJS</span>
-                    <span>TYPESCRIPT</span>
+            <div class="tecnologies">
+                <h2 class="tecnologies__title">Tecnologias</h2>
+                <div class="tecnologies__group">                        
+                    <span class="tecnologies__span">HTML5</span>
+                    <span class="tecnologies__span">CSS3</span>
+                    <span class="tecnologies__span">JAVASCRIPT</span>
+                    <span class="tecnologies__span">NODEJS</span>
+                    <span class="tecnologies__span">MYSQL</span>
+                    <span class="tecnologies__span">GITHUB</span>
+                    <span class="tecnologies__span">GIT</span>
+                    <span class="tecnologies__span">REACTJS</span>
+                    <span class="tecnologies__span">TYPESCRIPT</span>
                 </div>
                 
             </div>
-            <div id="experiences">
-                <h2>Experiencias</h2>
+
+            <div class="experiences">
+                <h2 class="experiences__title">Experiencias</h2>
                 <ul>
-                    <li><h3>Etec Cidade Tiradentes</h3>
+                    <li class="experiences__list">
+                        <h3 class="experiences__subtitle">Etec Cidade Tiradentes</h3>
                         <p>2022 - Concluido</p>
                         <p>TCC</p>
                     </li>
                 </ul>
             </div>
 
-            <div id="education">
-                <h2>Educação</h2>
-                <ul>
-                    <li><h3>Etec Cidade Tiradentes</h3>
+            <div class="education">
+                <h2 class="education__title">Educação</h2>
+                <ul class="education__list">
+                    <li>
+                        <h3 class="education__subtitle">Etec Cidade Tiradentes</h3>
                         <p>2022 - Concluido</p>
                         <p>TCC</p>
                     </li>
@@ -116,51 +127,51 @@
             </div>
         </section>
 
-        <section id="scope-right">
+        <section class="container container--right">
             
-            <div id="projects">
-                <h2>My Projects</h2>
-                <button>Veja todos</button>
+            <div class="projects">
+                <h2 class="projects__title">My Projects</h2>
+                <button class="projects__button">Veja todos</button>
             </div>
 
-            <div id="cards">
-                <div class="card">
-                    <div class="title-card">
-                        <img src="./images/assets/folder.svg" alt="icon-folder">
+            <div class="cards">
+                <div class="cards__group">
+                    <div class="cards__header">
+                        <img class="cards__header__img" src="./images/assets/folder.svg" alt="icon-folder">
                         <h3>my-onix</h3>
                     </div>
-                    <div class="content-card">
+                    <div class="cards__main">
                         <p>Consulte os códigos de erro que aparecem no painel do veículo Onix</p>
                     </div>
-                    <div class="footer-card">
-                        <div class="footer-left">
-                            <img src="./images/assets/star.svg" alt="icon-star">
+                    <div class="cards__footer">
+                        <div class="footer__group--left">
+                            <img class="cards__footer__img" src="./images/assets/star.svg" alt="icon-star">
                             <h4>100</h4>
-                            <img src="./images/assets/git-branch.svg" alt="icon-branch">
+                            <img class="cards__footer__img" src="./images/assets/git-branch.svg" alt="icon-branch">
                             <h4>100</h4>
                         </div>
-                        <div class="footer-right">
+                        <div class="footer__group--right">
                             <span></span>
                             <p>Javascript</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="title-card">
-                        <img src="./images/assets/folder.svg" alt="icon-folder">
+                <div class="cards__group">
+                    <div class="cards__header">
+                        <img class="cards__header__img" src="./images/assets/folder.svg" alt="icon-folder">
                         <h3>my-onix</h3>
                     </div>
-                    <div class="content-card">
+                    <div class="cards__main">
                         <p>Consulte os códigos de erro que aparecem no painel do veículo Onix</p>
                     </div>
-                    <div class="footer-card">
-                        <div class="footer-left">
-                            <img src="./images/assets/star.svg" alt="icon-star">
+                    <div class="cards__footer">
+                        <div class="footer__group--left">
+                            <img class="cards__footer__img" src="./images/assets/star.svg" alt="icon-star">
                             <h4>100</h4>
-                            <img src="./images/assets/git-branch.svg" alt="icon-branch">
+                            <img class="cards__footer__img" src="./images/assets/git-branch.svg" alt="icon-branch">
                             <h4>100</h4>
                         </div>
-                        <div class="footer-right">
+                        <div class="footer__group--right">
                             <span></span>
                             <p>Javascript</p>
                         </div>
@@ -168,25 +179,25 @@
                 </div>
             </div>
             
-            <div id="posts">
+            <div class="posts">
                 <h2>Recent Posts</h2>
             </div>
 
-            <div id="cards-posts">
-                <div id="photo-profile">
+            <div class="cardsPosts">
+                <div class="cardsPosts__profile">
                     <img src="images/perfilfotoLinkedin.png" alt="photo-profile">
                 </div>
 
-                <div id="content-card">
+                <div class="cardsPosts--title">
                     <h2>Erro adb devices no Genymotion e Android Studio (React Native)</h3>
                     <h4>2 anos atrás</h4>
                 </div>
 
-                <div id="content-card-subtitle">
+                <div class="cardsPosts--subtitle">
                     <h2>Erro adb devices no Genymotion e Android Studio (React Native)</h2>
                 </div>
 
-                <div id="hashtags">
+                <div class="cardsPosts--hashtags">
                     <h4>#react-native</h4>
                     <h4>#genimotion</h4>
                     <h4>#genimotion</h4>
@@ -196,7 +207,7 @@
 
         </section>
     </main>
-    <footer id="rodape">Feito por Bruno Barbosa</footer>
+    <footer class="rodape">Feito por Bruno Barbosa</footer>
 
     <script src="script.js"></script>
 </body>
