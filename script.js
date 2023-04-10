@@ -13,10 +13,10 @@ function toggleMenu(event) {
 btnNavbar.addEventListener('click', toggleMenu)
 btnNavbar.addEventListener('touchstart', toggleMenu)
 
-function toggleDivision(event) {
-   if (event.type === 'touchstart') event.preventDefault();
-   btnContacts.classList.toggle('active')
-}
+// function toggleDivision(event) {
+//    if (event.type === 'touchstart') event.preventDefault();
+//    btnContacts.classList.toggle('active')
+// }
 
-btnContacts.addEventListener('click', toggleDivision)
-btnContacts.addEventListener('touchstart', toggleDivision)
+// btnContacts.addEventListener('click', toggleDivision)
+// btnContacts.addEventListener('touchstart', toggleDivision)
