@@ -1,5 +1,8 @@
 const btnNavbar = document.getElementById('btn-menu')
-const btnContacts = document.getElementById('contacts-mobile')
+const divContacts = document.getElementById('divContacts')
+const divTecnologies = document.getElementById('divTecnologies')
+const divExperiences = document.getElementById('divExperiences')
+const divEducation = document.getElementById('divEducation')
 const navbar = document.getElementById('navbar')
 const Elementfooter = document.getElementsByClassName('rodape')
 
@@ -15,10 +18,36 @@ function toggleMenu(event) {
 btnNavbar.addEventListener('click', toggleMenu)
 btnNavbar.addEventListener('touchstart', toggleMenu)
 
-// function toggleDivision(event) {
-//    if (event.type === 'touchstart') event.preventDefault();
-//    btnContacts.classList.toggle('active')
-// }
+function toggleDivisionContacts(event) {
+    if (event.type === 'touchstart') event.preventDefault();
+    divContacts.classList.toggle('active')    
+}
 
-// btnContacts.addEventListener('click', toggleDivision)
-// btnContacts.addEventListener('touchstart', toggleDivision)
+divContacts.addEventListener('click', toggleDivisionContacts)
+divContacts.addEventListener('touchstart', toggleDivisionContacts)
+
+function toggleDivisionTecnologies(event) {
+    if (event.type === 'touchstart') event.preventDefault();
+    divTecnologies.classList.toggle('active')    
+}
+
+divTecnologies.addEventListener('click', toggleDivisionTecnologies)
+divTecnologies.addEventListener('touchstart', toggleDivisionTecnologies)
+
+
+function toggleDivisionExperiences(event) {
+    if (event.type === 'touchstart') event.preventDefault();
+    divExperiences.classList.toggle('active')    
+}
+
+divExperiences.addEventListener('click', toggleDivisionExperiences)
+divExperiences.addEventListener('touchstart', toggleDivisionExperiences)
+
+
+function toggleDivisionEducation(event) {
+    if (event.type === 'touchstart') event.preventDefault();
+    divEducation.classList.toggle('active')    
+}
+
+divEducation.addEventListener('click', toggleDivisionEducation)
+divEducation.addEventListener('touchstart', toggleDivisionEducation)
