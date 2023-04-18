@@ -833,6 +833,15 @@ body {
         box-shadow: inset 0px 0px 6px 1px #0000008a;
     }
 
+    .navbar__contacts__header__svg,
+    .navbar__tecnologies__header__svg,
+    .navbar__experiences__header__svg,
+    .navbar__education__header__svg {
+        width: 25px;
+        height: 25px;
+        padding-left: 10px;
+    }
+
     .navbar__contacts__btn, 
     .navbar__tecnologies__btn, 
     .navbar__experiences__btn, 
@@ -929,7 +938,7 @@ body {
     }
 
     .navbar__contacts__header h1 {
-        padding-left: 20px;
+        padding-left: 10px;
     }
 
     .navbar__contacts.active .navbar__contacts__content {
@@ -984,7 +993,7 @@ body {
     }
 
     .navbar__tecnologies__header h1 {
-        padding-left: 20px;
+        padding-left: 10px;
     }
 
     .navbar__tecnologies__content {
@@ -1055,7 +1064,7 @@ body {
     }
 
     .navbar__experiences__header h1 {
-        padding-left: 20px;
+        padding-left: 10px;
     }
 
     .navbar__experiences__content {
@@ -1107,7 +1116,7 @@ body {
     }
 
     .navbar__education__header h1 {
-        padding-left: 20px;
+        padding-left: 10px;
     }
 
     .navbar__education__content {
