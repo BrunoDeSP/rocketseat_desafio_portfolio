@@ -622,7 +622,6 @@ body {
         box-sizing: border-box;
         /* -- background-color: #0f0f14; -- */
         background: var(--body-bg-color);
-        color: var(--body-bg-color);
         box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.349);
     }
 
@@ -741,7 +740,6 @@ body {
         visibility: visible;
         overflow-y: auto;
         transition: .6s;
-        box-shadow: inset 0px 3px 6px 1px rgb(0 0 0 / 35%);
     }
 
     .navbar__menu a {
@@ -754,28 +752,44 @@ body {
         display: flex;
         flex-direction: column;
         width: 100%;
+        height: calc(100vh - 30px);
+        background: var(--bg-cards);
+        box-shadow: inset 0px 7px 7px 1px rgb(0 0 0 / 36%);
+        
     }
 
 /* 
-||  ORGANIZING GROUP HEADER  ||
+||  ORGANIZING GROUP DIVISIONS  ||
 */
 
     .navbar__group--header {
-        display: flex;
-        flex-direction: column;
         width: 100%;
-        height: calc(100vh - 20px);
-        max-height: calc(100vh - 20px);
-        align-items: center;
-        justify-content: space-between;
+        height: 40%;
+        min-height: 210px;
+        background: var(--bg-cards);
+        box-shadow: inset 0px 7px 7px 1px rgb(0 0 0 / 36%);
     }
 
-    .navbar__group__division {
+    .navbar__group--content {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        position: absolute;
         width: 100%;
-        margin-bottom: 10px;
+        height: 60%;
+        top: 210px;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 20px 20px 0px 0px;
+        background: var(--text-color);
+        box-shadow: 0px -1px 5px 2px #00000059;
+    }
+
+    .navbar__group--footer {
+        display: flex;
+        width: 100%; 
+        height: 20px;
+        min-height: 20px;
+        align-items: center;
+        color: #000;
     }
 
 /*
@@ -790,6 +804,8 @@ body {
         width: 100%;
         height: 60px;
         transition: .6s;
+        background: var(--text-color);
+        color: #000;
     }
 
     .navbar__contacts__header, 
@@ -798,11 +814,10 @@ body {
     .navbar__education__header {
         display: flex;
         width: 100%;
-        height: 50px;
-        justify-content: center;
+        height: 60px;
         align-items: center;
     }
-
+    
     .navbar__contacts__content,
     .navbar__tecnologies__content,
     .navbar__experiences__content,
@@ -866,17 +881,6 @@ body {
         transform: rotate(-50deg);
     }
 
-    .menu__divisor {
-        width: 70%;
-        height: 2px;
-        min-height: 2px;
-        margin-top: 15px;
-        list-style: none;
-        background: #0000004d;
-        border-radius: 10px;
-    }
-
-
 /*
 ||  NAVBAR PROFILE  || 
 */
@@ -884,10 +888,7 @@ body {
     .navbar__profile {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        position: relative;
-        left: 0px;
         width: 100%;
         list-style: none;
     }
@@ -900,25 +901,35 @@ body {
         margin-bottom: 5px;
         margin-left: 10px;
         border: 2px green solid;
+        box-shadow: 0px 0px 8px 1px rgb(0 0 0 / 24%);
     }
 
     .navbar__profile h2 {
-        margin-left: 4px;
         font-size: 2.1rem;
+        color: var(--text-color);
+        text-shadow: 0px 0px 8px rgb(0 0 0 / 70%);
     }
 
     .navbar__profile h3 {
         font-size: small;
-        margin-left: 5px;
         font-weight: lighter;
+        text-shadow: 0px 0px 8px rgb(0 0 0 / 70%);
     }
 
 /*
 ||  NAVBAR CONTACTS  || 
 */
 
+    .navbar__contacts {
+        border-radius: 20px 20px 0px 0px;
+    }
+
     .navbar__contacts.active {
-        height: 350px;
+        height: 360px;
+    }
+
+    .navbar__contacts__header h1 {
+        padding-left: 20px;
     }
 
     .navbar__contacts.active .navbar__contacts__content {
@@ -969,7 +980,11 @@ body {
 */
 
     .navbar__tecnologies.active {
-        height: 210px;
+        height: 220px;
+    }
+
+    .navbar__tecnologies__header h1 {
+        padding-left: 20px;
     }
 
     .navbar__tecnologies__content {
@@ -1036,7 +1051,11 @@ body {
 */
 
     .navbar__experiences.active {
-        height: 200px;
+        height: 150px;
+    }
+
+    .navbar__experiences__header h1 {
+        padding-left: 20px;
     }
 
     .navbar__experiences__content {
@@ -1048,16 +1067,17 @@ body {
 
     .navbar__experiences__content h3 {
         font-size: 1.6rem;
+        padding-left: 20px;
     }
 
     .navbar__experiences__content p {
         font-size: 1.2rem;
-        padding-left: 5px;
+        padding-left: 25px;
     }
     
     .navbar__experiences.active .navbar__experiences__content {
         height: 50px;
-        padding: 20px;
+        padding: 20px 0px;
         color: var(--text-color);
         visibility: visible;
         overflow-y: hidden;
@@ -1083,7 +1103,11 @@ body {
 */
 
     .navbar__education.active {
-        height: 200px;
+        height: 150px;
+    }
+
+    .navbar__education__header h1 {
+        padding-left: 20px;
     }
 
     .navbar__education__content {
@@ -1095,16 +1119,17 @@ body {
 
     .navbar__education__content h3 {
         font-size: 1.6rem;
+        padding-left: 20px;
     }
 
     .navbar__education__content p {
         font-size: 1.2rem;
-        padding-left: 5px;
+        padding-left: 25px;
     }
 
     .navbar__education.active .navbar__education__content {
         height: 50px;
-        padding: 20px;
+        padding: 20px 0px;
         color: var(--text-color);
         visibility: visible;
         overflow-y: hidden;
@@ -1132,31 +1157,26 @@ body {
 ||  ORGANIZING GROUP FOOTER  ||
 */
 
-    .navbar__group--footer {
-        display: flex;
-        width: 100%; 
-        height: 20px;
-        align-items: center;
-    }
-
-
     .navbar__footer {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: 20px;
-        max-height: 20px;
-        border-top: 1px solid rgba(255, 255, 255, 0.171);
     }
 
-
-/*     
-    footer.active {
-        display: none;
-    } */
-
 }
+
+@media (max-width: 370px) {
+    .navbar__contacts__subtitle {
+        font-size: 1.2rem;
+    }
+
+    .navbar__tecnologies__span {
+        font-size: 1.2rem;
+    }
+}
+
 /*
 @media (max-width: 680px) {
     div#content-card h2 {
