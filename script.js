@@ -1,8 +1,8 @@
 const btnNavbar = document.getElementById('btn-menu')
-const divContacts = document.getElementById('divContacts')
-const divTecnologies = document.getElementById('divTecnologies')
-const divExperiences = document.getElementById('divExperiences')
-const divEducation = document.getElementById('divEducation')
+const divContactsContent = document.getElementById('divContactsContent')
+const divTecnologiesContent = document.getElementById('divTecnologiesContent')
+const divExperiencesContent = document.getElementById('divExperiencesContent')
+const divEducationContent = document.getElementById('divEducationContent')
 const navbar = document.getElementById('navbar')
 const Elementfooter = document.getElementsByClassName('rodape')
 
@@ -20,34 +20,38 @@ btnNavbar.addEventListener('touchstart', toggleMenu)
 
 function toggleDivisionContacts(event) {
     if (event.type === 'touchstart') event.preventDefault();
+    const divContacts = document.getElementById('divContacts')
     divContacts.classList.toggle('active')    
 }
 
-divContacts.addEventListener('click', toggleDivisionContacts)
-divContacts.addEventListener('touchstart', toggleDivisionContacts)
+divContactsContent.addEventListener('click', toggleDivisionContacts)
+divContactsContent.addEventListener('touchstart', toggleDivisionContacts)
 
 function toggleDivisionTecnologies(event) {
     if (event.type === 'touchstart') event.preventDefault();
+    const divTecnologies = document.getElementById('divTecnologies')
     divTecnologies.classList.toggle('active')    
 }
 
-divTecnologies.addEventListener('click', toggleDivisionTecnologies)
-divTecnologies.addEventListener('touchstart', toggleDivisionTecnologies)
+divTecnologiesContent.addEventListener('click', toggleDivisionTecnologies)
+divTecnologiesContent.addEventListener('touchstart', toggleDivisionTecnologies)
 
 
 function toggleDivisionExperiences(event) {
     if (event.type === 'touchstart') event.preventDefault();
+    const divExperiences = document.getElementById('divExperiences')
     divExperiences.classList.toggle('active')    
 }
 
-divExperiences.addEventListener('click', toggleDivisionExperiences)
-divExperiences.addEventListener('touchstart', toggleDivisionExperiences)
+divExperiencesContent.addEventListener('click', toggleDivisionExperiences)
+divExperiencesContent.addEventListener('touchstart', toggleDivisionExperiences)
 
 
 function toggleDivisionEducation(event) {
     if (event.type === 'touchstart') event.preventDefault();
+    const divEducation = document.getElementById('divEducation')
     divEducation.classList.toggle('active')    
 }
 
-divEducation.addEventListener('click', toggleDivisionEducation)
-divEducation.addEventListener('touchstart', toggleDivisionEducation)
+divEducationContent.addEventListener('click', toggleDivisionEducation)
+divEducationContent.addEventListener('touchstart', toggleDivisionEducation)
