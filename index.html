@@ -9,106 +9,264 @@
     <title>Desafio Portfolio</title>
 </head>
 <body>
-    <main>
-        <div id="navbar">
-            <button id="btn-menu">
-                <span id="top-bar"></span>
-                <span id="middle-bar"></span>
-                <span id="bot-bar"></span>
+    <main class="main">
+        <div id="navbar" class="navbar">
+            <button id="btn-menu" class="navbar__btn">
+                <span class="navbar__btn--topbar"></span>
+                <span class="navbar__btn--middlebar"></span>
+                <span class="navbar__btn--botbar"></span>
             </button>
-            <p>Menu</p>
+            <p class="navbar__title">Menu</p>
             <!-- <span id="logo">Bruno Barbosa antunes</span> -->
-            <ul id="menu">
-                <li id="profile-mobile">
-                    <img src="./images/perfilfotoLinkedin.png" alt="Foto Portfolio">
-                    <h2>Bruno Barbosa Antunes</h2>
-                    <h3>Desenvolvedor Web</h3>
-                </li>
+            <ul class="navbar__menu">
+                <li class="navbar__list">                    
+                        <div class="navbar__group--header">
+                            <div class="navbar__profile">
+                                <img src="./images/perfilfotoLinkedin.png" alt="Foto Portfolio">
+                                <h2>Bruno Barbosa Antunes</h2>
+                                <h3>Desenvolvedor Web</h3>
+                            </div>
+                            
+                        </div>
+    
+                        <div class="navbar__group--content">
+                            <div class="navbar__group__separation-top">
+            
+                                <div id="divContacts" class="navbar__contacts">
+                                    <div class="navbar__contacts__header">
+                                        <img class="navbar__contacts__header__svg" src="images/icons_tecnologies/call.svg" alt="icon-local">
+                                        <h1>Contatos</h1> 
+                                        <button class="navbar__contacts__btn">
+                                            <span class="navbar__contacts--barOne"></span>
+                                            <span class="navbar__contacts--barTwo"></span>
+                                        </button>
+                                    </div>
+    
+                                    <div class="navbar__contacts__content">
+                                <div class="navbar__contacts__group">
+                                    <img class="navbar__contacts__svg" src="images/assets/map-pin.svg" alt="icon-local">
+                                    <p class="navbar__contacts__subtitle">Brasil</p>
+                                </div>
+                                <div class="navbar__contacts__group">
+                                    <img class="navbar__contacts__svg" src="images/assets/folder.svg" alt="icon-state">
+                                    <p class="navbar__contacts__subtitle">Procurando Emprego</p>
+                                </div>
+                                <div class="navbar__contacts__group">
+                                    <img class="navbar__contacts__svg" src="images/assets/github.svg" alt="icon-github">
+                                    <a class="navbar__contacts__link" href="https://www.github.com/BrunoDeSP" target="_blank">
+                                        <p class="navbar__contacts__subtitle">BrunoDeSP</p>
+                                    </a>
+                                </div>
+                                <div class="navbar__contacts__group">
+                                    <img class="navbar__contacts__svg" src="images/assets/linkedin.svg" alt="icon-linkedin">
+                                    <a class="navbar__contacts__link" href="https://www.linkedin.com/in/bruno-barbosa-antunes" target="_blank">
+                                        <p class="navbar__contacts__subtitle">Bruno Barbosa Antunes</p>
+                                    </a>
+                                </div>
+                                <div class="navbar__contacts__group">
+                                    <img class="navbar__contacts__svg" src="images/assets/instagram.svg" alt="icon-instagram">
+                                    <a class="navbar__contacts__link" href="https://www.instagram.com/antunes.no" target="_blank">
+                                        <p class="navbar__contacts__subtitle">@antunes.no</p>
+                                    </a>
+                                </div>
+                                <div class="navbar__contacts__group">
+                                    <img class="navbar__contacts__svg" src="images/assets/star.svg" alt="icon-code">
+                                    <a class="navbar__contacts__link" href="https://github.com/BrunoDeSP/rocketseat_desafio_portfolio.git" target="_blank">
+                                        <p class="navbar__contacts__subtitle">Codigo Do Projeto</p>
+                                    </a>
+                                </div>
+                                <div class="navbar__contacts__group">
+                                    <img class="navbar__contacts__svg" src="images/assets/mail.svg" alt="icon-email">
+                                    <p class="navbar__contacts__subtitle">antunesbrunobarbosa1@gmail.com</p>
+                                </div>
+                                    </div>
+                                </div>
+                        
+                                <div id="divTecnologies" class="navbar__tecnologies">
+                                    <div class="navbar__tecnologies__header">
+                                        <img class="navbar__tecnologies__header__svg" src="images/icons_tecnologies/code-slash.svg" alt="icon-local">
+                                        <h1>Tecnologias</h1> 
+                                        <button class="navbar__tecnologies__btn">
+                                            <span class="navbar__tecnologies--barOne"></span>
+                                            <span class="navbar__tecnologies--barTwo"></span>
+                                        </button>
+                                    </div>
+            
+                                    <div class="navbar__tecnologies__content">
 
-                <span id="divisor"></span>
+                                        <div class="navbar__tecnologies__group">
+                                            <img class="navbar__tecnologies__svg" src="images/icons_tecnologies/html5-plain.svg" alt="icon-local">
+                                            <span class="navbar__tecnologies__span">HTML5</span>
+                                        </div>
 
-                <li id="contacts-mobile" class="active">
-                    <p>Contatos</p> 
-                    <div id="contacts-mobile-content">
-                        Teste
-                    </div>
+                                        <div class="navbar__tecnologies__group">
+                                            <img class="navbar__tecnologies__svg" src="images/icons_tecnologies/css3-plain.svg" alt="icon-local">
+                                            <span class="navbar__tecnologies__span">CSS3</span>
+                                        </div>
+
+                                        <div class="navbar__tecnologies__group">
+                                            <img class="navbar__tecnologies__svg" src="images/icons_tecnologies/javascript-plain.svg" alt="icon-local">
+                                            <span class="navbar__tecnologies__span">JAVASCRIPT</span>    
+                                        </div>
+
+                                        <div class="navbar__tecnologies__group">            
+                                            <img class="navbar__tecnologies__svg" src="images/icons_tecnologies/nodejs-plain.svg" alt="icon-local">
+                                            <span class="navbar__tecnologies__span">NODEJS</span>
+                                        </div>
+
+                                        <div class="navbar__tecnologies__group">                                        
+                                            <img class="navbar__tecnologies__svg" src="images/icons_tecnologies/mysql-plain.svg" alt="icon-local">
+                                            <span class="navbar__tecnologies__span">MYSQL</span>
+                                        </div>
+                                        
+                                        <div class="navbar__tecnologies__group">                                    
+                                            <img class="navbar__tecnologies__svg" src="images/icons_tecnologies/github-original.svg" alt="icon-local">
+                                            <span class="navbar__tecnologies__span">GITHUB</span>
+                                        </div>
+
+                                        <div class="navbar__tecnologies__group">                                        
+                                            <img class="navbar__tecnologies__svg" src="images/icons_tecnologies/git-plain.svg" alt="icon-local">
+                                            <span class="navbar__tecnologies__span">GIT</span>                            
+                                        </div>
+
+                                        <div class="navbar__tecnologies__group">                                        
+                                            <img class="navbar__tecnologies__svg" src="images/icons_tecnologies/react-original.svg" alt="icon-local">
+                                            <span class="navbar__tecnologies__span">REACTJS</span>
+                                        </div>
+
+                                        <div class="navbar__tecnologies__group">                                        
+                                            <img class="navbar__tecnologies__svg" src="images/icons_tecnologies/typescript-plain.svg" alt="icon-local">
+                                            <span class="navbar__tecnologies__span">TYPESCRIPT</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+    
+                                <div id="divExperiences" class="navbar__experiences">
+                                    <div class="navbar__experiences__header">
+                                        <img class="navbar__experiences__header__svg" src="images/icons_tecnologies/briefcase.svg" alt="icon-local">
+                                        <h1>Experiencias</h1> 
+                                        <button class="navbar__experiences__btn">
+                                            <span class="navbar__experiences--barOne"></span>
+                                            <span class="navbar__experiences--barTwo"></span>
+                                        </button>
+                                    </div>
+            
+                                    <div class="navbar__experiences__content">
+                                        <h3 class="navbar__experiences__subtitle">Etec Cidade Tiradentes</h3>
+                                        <p>2022 - Concluido</p>
+                                        <p>TCC</p>
+                                    </div>
+                                </div>
+    
+                                <div id="divEducation" class="navbar__education">
+                                    <div class="navbar__education__header">
+                                        <img class="navbar__education__header__svg" src="images/icons_tecnologies/book.svg" alt="icon-local">
+                                        <h1>Educação</h1> 
+                                        <button class="navbar__education__btn">
+                                            <span class="navbar__education--barOne"></span>
+                                            <span class="navbar__education--barTwo"></span>
+                                        </button>
+                                    </div>
+            
+                                    <div class="navbar__education__content">
+                                        <h3 class="navbar__education__subtitle">Etec Cidade Tiradentes</h3>
+                                        <p>2022 - Concluido</p>
+                                        <p>TCC</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="navbar__group__separation--bottom">
+                                <div class="navbar__group--footer">
+                                    <div class="navbar__footer">Feito por Bruno Barbosa Antunes</div>
+                                </div>
+                            </div>
+                        </div>
                 </li>
-                
-                <li id="tecnologies-mobile">Tecnologias</li>
-                <li id="experiences-mobile">Experiencias</li>
-                <li id="education-mobile">Educação</li>
-                <li id="footer-mobile">Feito por Bruno Barbosa Antunes</li>
+               
             </ul>
         </div>
 
-        <section id="scope-left">
+        <section class="container container--left">
             
-            <div id="profile">
-                <img src="./images/perfilfotoLinkedin.png" alt="Foto Portfolio">
-                <h2>Bruno Barbosa Antunes</h2>
-                <h3>Desenvolvedor Web</h3>
+            <div class="profile">
+                <img class="profile__img" src="./images/perfilfotoLinkedin.png" alt="Foto Portfolio">
+                <h2 class="profile__title">Bruno Barbosa Antunes</h2>
+                <h3 class="profile__title--small">Desenvolvedor Web</h3>
             </div>
 
-            <div id="contacts">
-                <div class="group-legends">
-                    <img src="images/assets/map-pin.svg" alt="icon-local">
-                    <p class="legends">Brasil</p>
+            <div class="contacts">
+                <div class="contacts__group">
+                    <img class="contacts__svg" src="images/assets/map-pin.svg" alt="icon-local">
+                    <p class="contacts__subtitle">Brasil</p>
                 </div>
-                <div class="group-legends">
-                    <img src="images/assets/folder.svg" alt="icon-state">
-                    <p class="legends">Procurando Emprego</p>
+                <div class="contacts__group">
+                    <img class="contacts__svg" src="images/assets/folder.svg" alt="icon-state">
+                    <p class="contacts__subtitle">Procurando Emprego</p>
                 </div>
-                <div class="group-legends">
-                    <img src="images/assets/github.svg" alt="icon-github">
-                    <a href="https://www.github.com/BrunoDeSP" target="_blank"><p class="legends">BrunoDeSP</p></a>
+                <div class="contacts__group">
+                    <img class="contacts__svg" src="images/assets/github.svg" alt="icon-github">
+                    <a class="contacts__link" href="https://www.github.com/BrunoDeSP" target="_blank">
+                        <p class="contacts__subtitle">BrunoDeSP</p>
+                    </a>
                 </div>
-                <div class="group-legends">
-                    <img src="images/assets/linkedin.svg" alt="icon-linkedin">
-                    <a href="https://www.linkedin.com/in/bruno-barbosa-antunes" target="_blank"><p class="legends">Bruno Barbosa Antunes</p></a>
+                <div class="contacts__group">
+                    <img class="contacts__svg" src="images/assets/linkedin.svg" alt="icon-linkedin">
+                    <a class="contacts__link" href="https://www.linkedin.com/in/bruno-barbosa-antunes" target="_blank">
+                        <p class="contacts__subtitle">Bruno Barbosa Antunes</p>
+                    </a>
                 </div>
-                <div class="group-legends">
-                    <img src="images/assets/instagram.svg" alt="icon-instagram">
-                    <a href="https://www.instagram.com/antunes.no" target="_blank"><p class="legends">@antunes.no</p></a>
+                <div class="contacts__group">
+                    <img class="contacts__svg" src="images/assets/instagram.svg" alt="icon-instagram">
+                    <a class="contacts__link" href="https://www.instagram.com/antunes.no" target="_blank">
+                        <p class="contacts__subtitle">@antunes.no</p>
+                    </a>
                 </div>
-                <div class="group-legends">
-                    <img src="images/assets/star.svg" alt="icon-code">
-                    <a href="https://github.com/BrunoDeSP/rocketseat_desafio_portfolio.git" target="_blank"><p class="legends">Codigo Do Projeto</p></a>
+                <div class="contacts__group">
+                    <img class="contacts__svg" src="images/assets/star.svg" alt="icon-code">
+                    <a class="contacts__link" href="https://github.com/BrunoDeSP/rocketseat_desafio_portfolio.git" target="_blank">
+                        <p class="contacts__subtitle">Codigo Do Projeto</p>
+                    </a>
                 </div>
-                <div class="group-legends">
-                    <img src="images/assets/mail.svg" alt="icon-email">
-                    <p class="legends">antunesbrunobarbosa1@gmail.com</p>
+                <div class="contacts__group">
+                    <img class="contacts__svg" src="images/assets/mail.svg" alt="icon-email">
+                    <p class="contacts__subtitle">antunesbrunobarbosa1@gmail.com</p>
                 </div>
             </div>
 
-            <div id="tecnologies">
-                <h2>Tecnologias</h2>
-                <div id="group-tecnologies">                        
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    <span>JAVASCRIPT</span>
-                    <span>NODEJS</span>
-                    <span>MYSQL</span>
-                    <span>GITHUB</span>
-                    <span>GIT</span>
-                    <span>REACTJS</span>
-                    <span>TYPESCRIPT</span>
+            <div class="tecnologies">
+                <h2 class="tecnologies__title">Tecnologias</h2>
+                <div class="tecnologies__group">                        
+                    <span class="tecnologies__span">HTML5</span>
+                    <span class="tecnologies__span">CSS3</span>
+                    <span class="tecnologies__span">JAVASCRIPT</span>
+                    <span class="tecnologies__span">NODEJS</span>
+                    <span class="tecnologies__span">MYSQL</span>
+                    <span class="tecnologies__span">GITHUB</span>
+                    <span class="tecnologies__span">GIT</span>
+                    <span class="tecnologies__span">REACTJS</span>
+                    <span class="tecnologies__span">TYPESCRIPT</span>
                 </div>
                 
             </div>
-            <div id="experiences">
-                <h2>Experiencias</h2>
+
+            <div class="experiences">
+                <h2 class="experiences__title">Experiencias</h2>
                 <ul>
-                    <li><h3>Etec Cidade Tiradentes</h3>
+                    <li class="experiences__list">
+                        <h3 class="experiences__subtitle">Etec Cidade Tiradentes</h3>
                         <p>2022 - Concluido</p>
                         <p>TCC</p>
                     </li>
                 </ul>
             </div>
 
-            <div id="education">
-                <h2>Educação</h2>
-                <ul>
-                    <li><h3>Etec Cidade Tiradentes</h3>
+            <div class="education">
+                <h2 class="education__title">Educação</h2>
+                <ul class="education__list">
+                    <li>
+                        <h3 class="education__subtitle">Etec Cidade Tiradentes</h3>
                         <p>2022 - Concluido</p>
                         <p>TCC</p>
                     </li>
@@ -116,51 +274,51 @@
             </div>
         </section>
 
-        <section id="scope-right">
+        <section class="container container--right">
             
-            <div id="projects">
-                <h2>My Projects</h2>
-                <button>Veja todos</button>
+            <div class="projects">
+                <h2 class="projects__title">My Projects</h2>
+                <button class="projects__button">Veja todos</button>
             </div>
 
-            <div id="cards">
-                <div class="card">
-                    <div class="title-card">
-                        <img src="./images/assets/folder.svg" alt="icon-folder">
+            <div class="cards">
+                <div class="cards__group">
+                    <div class="cards__header">
+                        <img class="cards__header__img" src="./images/assets/folder.svg" alt="icon-folder">
                         <h3>my-onix</h3>
                     </div>
-                    <div class="content-card">
+                    <div class="cards__main">
                         <p>Consulte os códigos de erro que aparecem no painel do veículo Onix</p>
                     </div>
-                    <div class="footer-card">
-                        <div class="footer-left">
-                            <img src="./images/assets/star.svg" alt="icon-star">
+                    <div class="cards__footer">
+                        <div class="footer__group--left">
+                            <img class="cards__footer__img" src="./images/assets/star.svg" alt="icon-star">
                             <h4>100</h4>
-                            <img src="./images/assets/git-branch.svg" alt="icon-branch">
+                            <img class="cards__footer__img" src="./images/assets/git-branch.svg" alt="icon-branch">
                             <h4>100</h4>
                         </div>
-                        <div class="footer-right">
+                        <div class="footer__group--right">
                             <span></span>
                             <p>Javascript</p>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="title-card">
-                        <img src="./images/assets/folder.svg" alt="icon-folder">
+                <div class="cards__group">
+                    <div class="cards__header">
+                        <img class="cards__header__img" src="./images/assets/folder.svg" alt="icon-folder">
                         <h3>my-onix</h3>
                     </div>
-                    <div class="content-card">
+                    <div class="cards__main">
                         <p>Consulte os códigos de erro que aparecem no painel do veículo Onix</p>
                     </div>
-                    <div class="footer-card">
-                        <div class="footer-left">
-                            <img src="./images/assets/star.svg" alt="icon-star">
+                    <div class="cards__footer">
+                        <div class="footer__group--left">
+                            <img class="cards__footer__img" src="./images/assets/star.svg" alt="icon-star">
                             <h4>100</h4>
-                            <img src="./images/assets/git-branch.svg" alt="icon-branch">
+                            <img class="cards__footer__img" src="./images/assets/git-branch.svg" alt="icon-branch">
                             <h4>100</h4>
                         </div>
-                        <div class="footer-right">
+                        <div class="footer__group--right">
                             <span></span>
                             <p>Javascript</p>
                         </div>
@@ -168,25 +326,25 @@
                 </div>
             </div>
             
-            <div id="posts">
+            <div class="posts">
                 <h2>Recent Posts</h2>
             </div>
 
-            <div id="cards-posts">
-                <div id="photo-profile">
+            <div class="cardsPosts">
+                <div class="cardsPosts__profile">
                     <img src="images/perfilfotoLinkedin.png" alt="photo-profile">
                 </div>
 
-                <div id="content-card">
+                <div class="cardsPosts--title">
                     <h2>Erro adb devices no Genymotion e Android Studio (React Native)</h3>
                     <h4>2 anos atrás</h4>
                 </div>
 
-                <div id="content-card-subtitle">
+                <div class="cardsPosts--subtitle">
                     <h2>Erro adb devices no Genymotion e Android Studio (React Native)</h2>
                 </div>
 
-                <div id="hashtags">
+                <div class="cardsPosts--hashtags">
                     <h4>#react-native</h4>
                     <h4>#genimotion</h4>
                     <h4>#genimotion</h4>
@@ -196,7 +354,7 @@
 
         </section>
     </main>
-    <footer id="rodape">Feito por Bruno Barbosa</footer>
+    <footer class="rodape">Feito por Bruno Barbosa</footer>
 
     <script src="script.js"></script>
 </body>
